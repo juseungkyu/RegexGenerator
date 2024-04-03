@@ -1,0 +1,97 @@
+[
+    {
+        "title": "그룹",
+        "prev": "(",
+        "next": ")",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "평문",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "",
+        "type": "plainText"
+    },
+    {
+        "title": "후방탐색",
+        "prev": "(?<=",
+        "next": ")",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "전방탐색",
+        "prev": "(?=",
+        "next": ")",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "반복",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "*",
+        "type": "plainText",
+        "style": "sinput"
+    },
+    {
+        "title": "텍스트",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": ".*",
+        "type": "plainText",
+        "style": "sinput"
+    },
+    {
+        "title": "하나 이상",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": ".+",
+        "type": "plainText",
+        "style": "sinput"
+    },
+    {
+        "title": "~가 아닌 텍스트",
+        "prev": "((?!",
+        "next": ").)",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "범위 OR",
+        "prev": "[",
+        "next": "]",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "범위 NOT(OR)",
+        "prev": "[^",
+        "next": "]",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "문장 시작",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "^",
+        "type": "plainText",
+        "style": "sinput"
+    },
+    {
+        "title": "문장 끝",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "$",
+        "type": "plainText",
+        "style": "sinput"
+    }
+]
