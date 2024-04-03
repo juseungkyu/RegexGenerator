@@ -15,6 +15,15 @@
         "type": "plainText"
     },
     {
+        "title": "메타문자",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "\\",
+        "type": "plainText",
+        "style": "sinput"
+    },
+    {
         "title": "후방탐색",
         "prev": "(?<=",
         "next": ")",

@@ -120,9 +120,9 @@ export class Block {
             });
         }
 
-        const command = this.block.querySelector('.command')
+        const command = this.block.querySelector('input.command')
         if (command) {
-            command.addEventListener('change', (e) => {
+            command.addEventListener('input', (e) => {
                 this.value = e.target.value;
                 window.app.output.innerText = generate(window.app.dropArea);
             });
