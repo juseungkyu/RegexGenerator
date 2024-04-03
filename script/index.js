@@ -129,7 +129,7 @@ function dragStop() {
 }
 
 async function loadBasicBlock () {
-    const json = await(await fetch("/basicBlock.json", {method: 'GET'})).json();
+    const json = await(await fetch("./basicBlock.json", {method: 'GET'})).json();
     for (const obj of json) {
         window.app.blockMap.blockList.push(convertJsonToBlock(obj));
     }
