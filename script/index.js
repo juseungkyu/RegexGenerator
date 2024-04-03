@@ -60,10 +60,9 @@ function reRender() {
 }
 
 function drop(e) {
-    console.log(checkContainMouseInElement(document.querySelector('#trash')));
-
     if (checkContainMouseInElement(document.querySelector('#trash'), e.clientX, e.clientY)) {
         remove();
+        window.app.output.innerText = generate(window.app.dropArea);
         return;
     }
 
@@ -91,8 +90,7 @@ function drop(e) {
         window.app.blockMap.dropArea = window.app.blockMap.dropArea.filter(x=>x!==window.app.currrentSelectBlock);
         mostDeepBlock.onMouseUp(e);
     }
-
-    console.log(window.app.blockMap.dropArea);
+    window.app.output.innerText = generate(window.app.dropArea);
 }
 
 function remove() {
@@ -116,7 +114,6 @@ function remove() {
 }
 
 function drag(event, block) {
-    console.log(event.clientX, window.app.elementMouseDownPosition.x);
     block.block.style.left = (event.clientX - window.app.elementMouseDownPosition.x) + 'px';
     block.block.style.top = (event.clientY - window.app.elementMouseDownPosition.y) + 'px';
 }

@@ -1,4 +1,5 @@
 import { convertJsonToBlock, blockBFS } from '../util/util.js';
+import { generate } from '../util/generator.js';
 
 export class Block {
     constructor({
@@ -123,13 +124,13 @@ export class Block {
         if (command) {
             command.addEventListener('change', (e) => {
                 this.value = e.target.value;
+                window.app.output.innerText = generate(window.app.dropArea);
             });
         }
 
         const childrenBlock = this.block.querySelector('.children-block');
         if (childrenBlock) {
             for (const child of this.children) {
-                console.log(child);
                 childrenBlock.appendChild(child.block);
             }
         }
