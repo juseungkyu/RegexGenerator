@@ -93,5 +93,30 @@
         "value": "$",
         "type": "plainText",
         "style": "sinput"
+    },
+    {
+        "title": "OR",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "|",
+        "type": "plainText",
+        "style": "sinput"
+    },
+    {
+        "title": "개수",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "value": "{1,2}",
+        "type": "plainText"
+    },
+    {
+        "title": "묶음 주석",
+        "prev": "",
+        "next": "",
+        "children": [],
+        "type": "parent",
+        "style": "title-input"
     }
 ]

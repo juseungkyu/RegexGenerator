@@ -94,7 +94,13 @@ export class Block {
 
     render() {
         this.block.innerHTML = `
-            <div class="block-header">${this.title}</div>
+            <div class="block-header">
+                ${
+                    this.style === 'title-input'
+                    ? `<input class="comment" type="text" placeholder="문자열" value="${this.title}">`
+                    : this.title
+                }
+            </div>
             <div class="block-content">
                 <pre class="command">${this.prev}</pre>
                 ${
@@ -105,6 +111,20 @@ export class Block {
                 <pre class="command">${this.next}</pre>
             </div>
         `;
+
+        const comment = this.block.querySelector('.comment')
+        if (comment) {
+            comment.addEventListener('change', (e) => {
+                this.title = e.target.value;
+            });
+        }
+
+        const command = this.block.querySelector('.command')
+        if (command) {
+            command.addEventListener('change', (e) => {
+                this.value = e.target.value;
+            });
+        }
 
         const childrenBlock = this.block.querySelector('.children-block');
         if (childrenBlock) {
