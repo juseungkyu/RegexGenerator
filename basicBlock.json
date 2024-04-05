@@ -65,7 +65,14 @@
         "style": "sinput"
     },
     {
-        "title": "~가 아닌 텍스트",
+        "title": "~가 아닌",
+        "prev": "(?!",
+        "next": ")",
+        "children": [],
+        "type": "parent"
+    },
+    {
+        "title": "~가 아닌 문자",
         "prev": "((?!",
         "next": ").)",
         "children": [],

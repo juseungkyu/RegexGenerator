@@ -87,3 +87,7 @@ body {
 .mt-1 {
     margin-top: 10px;
 }
+
+input.comment {
+    width: 100%;
+}
